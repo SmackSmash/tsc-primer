@@ -13,5 +13,12 @@ let truths: boolean[] = [true, false];
 
 // Classes
 class Car {}
-
 let car: Car = new Car();
+
+// Object literals
+let point: { x: number; y: number } = { x: 20, y: 20 };
+
+// Functions
+const logNumber: (num: number) => void = (num: number) => {
+  console.log(num);
+};
