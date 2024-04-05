@@ -6,7 +6,7 @@ interface Todo {
   completed: boolean;
 }
 
-const logTodo = (id: number, title: string, completed: boolean) => {
+const logTodo: Function = (id: number, title: string, completed: boolean) => {
   console.log(`ID: ${id}\nTitle: ${title}\nCompleted: ${completed}`);
 };
 
