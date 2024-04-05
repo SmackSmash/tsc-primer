@@ -1,12 +1,11 @@
 import axios from 'axios';
 
-const fetchTodo = async () => {
+(async () => {
   try {
     const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-    console.log(response.data);
+    const { id, title, completed } = response.data;
+    console.log(`ID: ${id}\nTitle: ${title}\nCompleted: ${completed}`);
   } catch (error: any) {
     console.error(error.message);
   }
-};
-
-fetchTodo();
+})();
