@@ -29,5 +29,5 @@ const logNumber: (num: number) => void = (num: number) => {
 // WHEN TO USE ANNOTATIONS
 // 1) Function that returns 'any' type
 const json = '{ "x": 10, "y": 20 }';
-const coords: { x: number; y: number } = JSON.parse(json);
+const coords: { x: number; y: number } = JSON.parse(json); // JSON returns 'any' as can't infer what will be in the json
 console.log(coords);
