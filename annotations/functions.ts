@@ -5,7 +5,7 @@ const add = (a: number, b: number): number => a + b;
 function divide(a: number, b: number): number {
   return a / b;
 }
-
+// and expressions
 const multiply = function (a: number, b: number): number {
   return a * b;
 };
