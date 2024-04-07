@@ -50,7 +50,3 @@ const isAboveZero = (arr: number[]) => {
   }
   return false;
 };
-
-numberAboveZero = isAboveZero(numbers);
-
-console.log(numberAboveZero);
