@@ -9,4 +9,10 @@ const car = manufacturers[0];
 const myCar = manufacturers.pop();
 
 // Prevent incompatible values
-manufacturers.push(100);
+// manufacturers.push(100); // Won't compile
+
+// Help with map
+manufacturers.map((car: string): string => {
+  // TS provides nice autocomplete for string type here
+  return car.toUpperCase();
+});
