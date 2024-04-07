@@ -16,3 +16,6 @@ manufacturers.map((car: string): string => {
   // TS provides nice autocomplete for string type here
   return car.toUpperCase();
 });
+
+// Flexible types
+const importantDates: (Date | string)[] = [new Date(), '2024-04-07'];
