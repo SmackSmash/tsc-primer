@@ -18,4 +18,15 @@ manufacturers.map((car: string): string => {
 });
 
 // Flexible types
-const importantDates: (Date | string)[] = [new Date(), '2024-04-07'];
+const importantDates: (Date | string)[] = [];
+importantDates.push(new Date()); // Valid
+importantDates.push('2024-04-07'); // Valid
+
+// Tuples
+const drink = {
+  color: 'brown',
+  carbonated: true,
+  sugar: 40
+};
+// A tuple is an ordered sequence of values
+const pepsi = ['brown', true, 40];
