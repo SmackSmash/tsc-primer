@@ -8,7 +8,7 @@ interface Vehicle {
 interface Reportable {
   summary(): string;
 }
-
+// Interface composition
 const oldCivic: Vehicle & Reportable = {
   name: 'civic',
   year: new Date(),
