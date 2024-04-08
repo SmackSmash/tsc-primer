@@ -2,10 +2,13 @@ interface Vehicle {
   name: string;
   year: Date;
   broken: boolean;
+}
+
+interface Reportable {
   summary(): string;
 }
 
-const oldCivic: Vehicle = {
+const oldCivic: Vehicle & Reportable = {
   name: 'civic',
   year: new Date(),
   broken: true,
@@ -14,7 +17,7 @@ const oldCivic: Vehicle = {
   }
 };
 
-const printVehicle = ({ name }: Vehicle): void => {
+const printVehicle = ({ name }: Vehicle & Reportable): void => {
   console.log(name);
 };
 
