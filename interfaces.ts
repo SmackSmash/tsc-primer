@@ -18,11 +18,11 @@ const oldCivic: Vehicle & Reportable = {
   }
 };
 
-const printVehicle = ({ name }: Vehicle & Reportable): void => {
-  console.log(name);
+const printSummary = (item: Reportable): void => {
+  console.log(item.summary());
 };
 
-printVehicle(oldCivic);
+printSummary(oldCivic);
 
 // Code reuse with interfaces
 interface Drink {
@@ -36,6 +36,8 @@ const drink: Drink & Reportable = {
   carbonated: true,
   sugar: 40,
   summary(): string {
-    return this.color;
+    return `This drink is ${this.color}`;
   }
 };
+
+printSummary(drink);
