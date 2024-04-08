@@ -1,10 +1,6 @@
 // Public, private, and protected clases
 class Vehicle {
-  color: string;
-
-  constructor(color: string) {
-    this.color = color;
-  }
+  constructor(public color: string) {}
 
   protected honk(): void {
     console.log('BEEP!');
@@ -12,11 +8,10 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-  wheels: number;
+  wheels: number = 4;
 
   constructor(color: string) {
     super(color);
-    this.wheels = 4;
   }
   private drive(): void {
     console.log('vroom');
