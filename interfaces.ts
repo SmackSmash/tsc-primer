@@ -14,8 +14,8 @@ const oldCivic: Vehicle = {
   }
 };
 
-const printVehicle = ({ name, year, broken }: Vehicle): void => {
-  console.log(name, year, broken);
+const printVehicle = ({ name }: Vehicle): void => {
+  console.log(name);
 };
 
 printVehicle(oldCivic);
