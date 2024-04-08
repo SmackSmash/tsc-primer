@@ -9,7 +9,7 @@ const oldCivic: Vehicle = {
   name: 'civic',
   year: new Date(),
   broken: true,
-  summary() {
+  summary(): string {
     return 'This is an old Honda civic';
   }
 };
