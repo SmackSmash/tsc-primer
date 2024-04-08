@@ -29,4 +29,9 @@ const drink = {
   sugar: 40
 };
 // A tuple is an ordered sequence of values
-const pepsi = ['brown', true, 40];
+const pepsi: [string, boolean, number] = ['brown', true, 40];
+
+// Can define type for tuples
+type Drink = [string, boolean, number];
+// And apply them to variables
+const fanta: Drink = ['orange', true, 30];
